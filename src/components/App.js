@@ -1,20 +1,8 @@
 import React from "react";
 
-// components
+// import components
 import Header from "./Header";
-
-const Player = (props) => {
-  return (
-    <div className="player">
-      <span className="player-name">
-        <button className="remove-player" onClick={ () => props.removePlayer(props.id) }>✖</button>
-        { props.name }
-      </span>
-      
-      <Counter />
-    </div>
-  );
-}
+import Player from "./Player";
 
 class Counter extends React.Component {
   state = {
