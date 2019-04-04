@@ -1,5 +1,8 @@
 import React from "react";
 
+// import components
+import Counter from "./Counter";
+
 const Player = (props) => {
   return (
     <div className="player">
