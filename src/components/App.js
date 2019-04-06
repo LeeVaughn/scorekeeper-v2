@@ -42,16 +42,18 @@ class App extends Component {
   }
 
   handleAddPlayer = (name) => {
-    this.setState({
-      players: [
-        // uses the spread operator to merge the initial objects in players state with the new array being created below
-        ...this.state.players,
-        {
-          name: name,
-          score: 0,
-          id: this.prevPlayerId += 1
-        }
-      ]
+    this.setState( prevState => {
+      return {
+        players: [
+          // uses the spread operator to merge the initial objects in players state with the new array being created below
+          ...prevState.players,
+          {
+            name: name,
+            score: 0,
+            id: this.prevPlayerId += 1
+          }
+        ]
+      }
     });
   }
 
