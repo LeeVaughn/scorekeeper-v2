@@ -3,6 +3,7 @@ import React, { Component } from "react";
 // import components
 import Header from "./Header";
 import Player from "./Player";
+import AddPlayerForm from "./AddPlayerForm"
 
 class App extends Component {
   // initializes a player state using a class property
@@ -67,6 +68,8 @@ class App extends Component {
             removePlayer={ this.handleRemovePlayer }
           />
         )}
+
+        <AddPlayerForm />
       </div>
     );    
   }
