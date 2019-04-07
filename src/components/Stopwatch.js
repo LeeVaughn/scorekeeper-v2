@@ -12,6 +12,11 @@ class Stopwatch extends Component {
     this.intervalID = setInterval( () => this.tick(), 100);
   }
 
+  // prevents memory leak if timer component unmounts
+  componentWillUnmount() {
+    clearInterval(this.intervalID);
+  }
+
   // when isRunning is true, updates elapseTime using the difference between previousTime and now and updates previousTime
   tick = () => {
     if (this.state.isRunning) {
