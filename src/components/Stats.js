@@ -5,13 +5,13 @@ const Stats = (props) => {
   return(
     <Consumer>
       { context => {
-        const totalPlayers = context.length;
+        const totalPlayers = context.players.length;
         /**
         * iterates over each player in state to get the total number of points
         * @param (number) total - accumulator to add up the returned values
         * @param (object) player - current item from the array being processed
         */
-        const totalPoints = context.reduce( (total, player) => {
+        const totalPoints = context.players.reduce( (total, player) => {
           return total + player.score;
         }, 0);
 
