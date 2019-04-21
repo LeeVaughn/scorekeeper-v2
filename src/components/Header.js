@@ -5,7 +5,7 @@ import Stats from "./Stats";
 import Stopwatch from "./Stopwatch";
 
 // passes an object for destructuring of props
-const Header = ({ players, title }) => {
+const Header = ({ title }) => {
   return (
     <header>
       <Stats />
