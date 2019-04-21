@@ -1,40 +1,42 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
+import { Consumer } from "./Context";
 
 class AddPlayerForm extends Component {
-  static propTypes = {
-    addPlayer: PropTypes.func
-  };
-
   state = {
     value: ""
   }
 
-  handleValueChange = (e) => {
-    this.setState({ value: e.target.value });
-  }
-
-  handleSubmit = (e) => {
-    e.preventDefault();
-    this.props.addPlayer(this.state.value);
-    this.setState({ value: ""});
-  }
-
   render() {
     return (
-      <form onSubmit={ this.handleSubmit }>
-        <input
-          type="text"
-          value={ this.state.value }
-          onChange= {this.handleValueChange }
-          placeholder="Enter a player's name"
-        />
+      <Consumer>
+        { context => {
+          const handleValueChange = (e) => {
+            this.setState({ value: e.target.value });
+          }
 
-        <input
-          type="submit"
-          value="Add Player"
-        />
-      </form>
+          const handleSubmit = (e) => {
+            e.preventDefault();
+            context.actions.addPlayer(this.state.value);
+            this.setState({ value: ""});
+          }
+
+          return (
+            <form onSubmit={ handleSubmit }>
+              <input
+                type="text"
+                value={ this.state.value }
+                onChange= { handleValueChange }
+                placeholder="Enter a player's name"
+              />
+
+              <input
+                type="submit"
+                value="Add Player"
+              />
+            </form>
+          );
+        }}
+      </Consumer>
     );
   }
 }
