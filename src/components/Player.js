@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
+import { Consumer } from "./Context";
 
 // import components
 import Counter from "./Counter";
@@ -8,8 +9,6 @@ import Icon from "./Icon";
 class Player extends PureComponent {
   // defines propTypes inside of the class component
   static propTypes = {
-    changeScore: PropTypes.func,
-    removePlayer: PropTypes.func,
     name: PropTypes.string.isRequired,
     score: PropTypes.number.isRequired,
     id: PropTypes.number,
@@ -19,21 +18,26 @@ class Player extends PureComponent {
 
   render() {
     // uses variable assignment for destructuring of props
-    const { name, score, id, index, changeScore, removePlayer } = this.props;
+    const { id, isHighScore, name, score, index } = this.props;
 
     return (
       <div className="player">
-        <span className="player-name">
-          <button className="remove-player" onClick={ () => removePlayer(id) }>✖</button>
+        <Consumer>
+          { context => {
+            return (
+              <span className="player-name">
+                <button className="remove-player" onClick={ () => context.actions.removePlayer(id) }>✖</button>
 
-          <Icon isHighScore={ this.props.isHighScore} />
-          { name }
-        </span>
+                <Icon isHighScore={ isHighScore } />
+                { name }
+              </span>
+            );
+          }}
+        </Consumer>
         
         <Counter
           score={ score }
           index={ index }
-          changeScore={ changeScore }
         />
       </div>
     );
