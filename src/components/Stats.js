@@ -1,7 +1,7 @@
 import React from "react";
 import { Consumer } from "./Context";
 
-const Stats = (props) => {
+const Stats = () => {
   return(
     <Consumer>
       { context => {
