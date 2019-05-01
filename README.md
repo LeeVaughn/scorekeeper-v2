@@ -1,3 +1,51 @@
+# Scorekeeper
+
+An easy to use score keeping application built with React using the Context API.
+
+## Motivation
+
+Everyone loves to play games with their friends and family but avoid pencil and paper scorekeeping and the inevitable math
+errors that come along with it and use the Scorekeeper app instead.
+
+## Features
+
+* Add or remove players
+* Customize player names
+* Increase or decrease scores with a click of a button
+* Highest scoring player is indicated with a crown icon
+* Stats section displays total number of players and total score
+* Includes a timer that can be paused and reset
+
+## Future Improvements
+
+* Deploy application on hosting site
+* Add button to increase score in larger increments
+* Add additional stylings
+
+## To Run
+
+* Download project files by running ```git clone https://github.com/LeeVaughn/scorekeeper/tree/context_api```
+* Navigate to the project folder
+* Install project dependencies with ```npm install```
+* Type ```npm start``` to run application
+* The application runs on localhost:3000, a new browser tab will open automatically
+
+## Built With
+
+* [Node.js](https://nodejs.org/en/)
+* [React](https://reactjs.org/)
+* [Create React App](https://github.com/facebook/create-react-app) See below for more info
+
+## Links
+
+* [Repository](https://github.com/LeeVaughn/scorekeeper/tree/context_api)
+
+## Author
+
+[Daniel Lee Vaughn](https://github.com/LeeVaughn)
+
+## About Create React App
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
