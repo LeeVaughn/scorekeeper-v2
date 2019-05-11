@@ -20,6 +20,8 @@ errors that come along with it and use the Scorekeeper app instead.
 
 * Deploy application to hosting site
 * Add button to increase score in larger increments
+* Add tracker to show recent score changes
+* Add rank order feature to show crown for highest or lowest score
 * Add additional stylings
 
 ## To Run
