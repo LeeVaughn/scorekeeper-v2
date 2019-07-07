@@ -12,6 +12,7 @@ class App extends Component {
       <Consumer>
         { context => {
           const highScore = context.actions.getHighScore();
+          const lowScore = context.actions.getLowScore();
           return (
             <div className="scoreboard">
               <Header title="Scoreboard" />
@@ -31,6 +32,8 @@ class App extends Component {
                   removePlayer={ context.actions.handleRemovePlayer }
                   // checks to see if player's score is equal to high score
                   isHighScore={ highScore === player.score}
+                  // checks to see if player's score is equal to low score
+                  isLowScore={ lowScore === player.score}
                 />
               )}
 
