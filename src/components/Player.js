@@ -10,12 +10,13 @@ class Player extends PureComponent {
   // defines propTypes inside of the class component
   static propTypes = {
     index: PropTypes.number,
-    isHighScore: PropTypes.bool
+    isHighScore: PropTypes.bool,
+    isLowScore: PropTypes.bool
   };
 
   render() {
     // uses variable assignment for destructuring of props
-    const { isHighScore, index } = this.props;
+    const { isHighScore, isLowScore, index } = this.props;
 
     return (
       <div className="player">
@@ -25,7 +26,7 @@ class Player extends PureComponent {
               <span className="player-name">
                 <button className="remove-player" onClick={ () => context.actions.removePlayer(context.players[index].id) }>✖</button>
 
-                <Icon isHighScore={ isHighScore } />
+                <Icon isHighScore={ isHighScore } isLowScore={ isLowScore } />
                 { context.players[index].name }
               </span>
             );
