@@ -17,7 +17,7 @@ header {
 
 header h1 {
   flex-grow: 1;
-  font-size: 1.5em;
+  font-size: 1.7em;
   letter-spacing: 2px;
   font-weight: normal;
 }
@@ -54,7 +54,7 @@ input[type=text]:focus{
 
 input[type=submit] {
   display: block;
-  font-size: .6em;
+  font-size: .8em;
   margin: 15px 15px 15px 0; 
   padding: 10px;
   background-color: #44338D;
@@ -102,7 +102,7 @@ svg {
 /* COMPONENT STYLES -------------------- */
 .scoreboard {
   background: #fff;
-  width: 700px;
+  width: 1000px;
   margin: 70px auto;
   box-shadow: 0 2px 0 rgb(133, 104, 250);
   border-radius: 6px;
@@ -111,7 +111,7 @@ svg {
 
 .player {
   display: flex;
-  font-size: 1.2em;
+  font-size: 1.4em;
   border-bottom: solid 2px #EEEEEE;
   letter-spacing: 2px;
 }
