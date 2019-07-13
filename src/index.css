@@ -17,7 +17,7 @@ header {
 
 header h1 {
   flex-grow: 1;
-  font-size: 1.7em;
+  font-size: 2.1em;
   letter-spacing: 2px;
   font-weight: normal;
 }
@@ -111,7 +111,7 @@ svg {
 
 .player {
   display: flex;
-  font-size: 1.4em;
+  font-size: 1.7em;
   border-bottom: solid 2px #EEEEEE;
   letter-spacing: 2px;
 }
@@ -210,10 +210,11 @@ svg {
 
 .counter {
   display: flex;
-  width: 400px;
+  width: 550px;
 }
 
   .counter-action {
+    width: 95px;
     border: none;
     font-size: 1.15em;
     font-weight: bold;
@@ -229,12 +230,25 @@ svg {
     color: #fff;
   }
 
+  .increment{
+    border: 2px solid #83D97C;
+  }
+
   .increment:hover {
     background: #83D97C;
   }
 
+  .decrement{
+    border: 2px solid #EF5350;
+  }
+
   .decrement:hover {
     background: #EF5350;
+  }
+
+  /* to prevent border between the two increment/decrement buttons from appearing too large */
+  .left{
+    border-right: 0px;
   }
 
   .counter-score {
