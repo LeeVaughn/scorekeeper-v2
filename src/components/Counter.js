@@ -8,10 +8,10 @@ const Counter = ({ index }) => {
       { context => {
         return (
           <div className="counter">
-            <button className="counter-action decrement" onClick={ () => context.actions.changeScore(index, -10) }> -10 </button>
+            <button className="counter-action decrement left" onClick={ () => context.actions.changeScore(index, -10) }> -10 </button>
             <button className="counter-action decrement" onClick={ () => context.actions.changeScore(index, -1) }> -1 </button>
             <span className="counter-score">{ context.players[index].score }</span>
-            <button className="counter-action increment" onClick={ () => context.actions.changeScore(index, 1) }> +1 </button>
+            <button className="counter-action increment left" onClick={ () => context.actions.changeScore(index, 1) }> +1 </button>
             <button className="counter-action increment" onClick={ () => context.actions.changeScore(index, 10) }> +10 </button>
           </div>
         );
