@@ -25,12 +25,16 @@ header h1 {
 /* used for Ticker component */
 footer {
   color: #FFF;
-  padding: 5px 10px;
+  padding: 10px;
   text-align: center;
   display: flex;
-  align-items: center;
+  justify-content: center;
   background-color: #8063FA;
-  border-bottom: solid 2px #D4CAFF;
+  /* border-bottom: solid 2px #D4CAFF; */
+}
+
+footer p {
+  margin: 0;
 }
 
 /* FORMS */
