@@ -14,7 +14,9 @@ class Ticker extends Component {
           const handleRecentChange = {}
 
           return (
-            <p>DAVID: +1, DAVID: +10, LEE: +1, LEE: +1, DAWN: +1</p>
+            <footer>
+              <p>DAVID: +1, DAVID: +10, LEE: +1, LEE: +1, DAWN: +1</p>
+            </footer>
           );
         }}
       </Consumer>
