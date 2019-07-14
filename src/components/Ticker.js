@@ -14,7 +14,7 @@ class Ticker extends Component {
           const handleRecentChange = {}
 
           return (
-            {/* elements to display recent score changes will go here */}
+            <p>DAVID: +1, DAVID: +10, LEE: +1, LEE: +1, DAWN: +1</p>
           );
         }}
       </Consumer>
