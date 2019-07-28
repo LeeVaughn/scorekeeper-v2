@@ -39,7 +39,7 @@ errors that come along with it and use the Scorekeeper app instead.
 * [Create React App](https://github.com/facebook/create-react-app) See below for more info
 
 ## Links
-
+* [Live Link](https://scorekeeper-v2.netlify.com/)
 * [Repository](https://github.com/LeeVaughn/scorekeeper-v2)
 
 ## Author
