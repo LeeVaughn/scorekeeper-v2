@@ -39,7 +39,7 @@ class App extends Component {
               )}
 
               <AddPlayerForm addPlayer={ context.actions.handleAddPlayer } />
-              <Ticker />
+              {/* <Ticker /> */}
             </div>
           );
         }}
