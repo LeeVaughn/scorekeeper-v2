@@ -16,7 +16,7 @@ class App extends Component {
           const lowScore = context.actions.getLowScore();
           return (
             <div className="scoreboard">
-              <Header title="Scoreboard" />
+              <Header title="Scorekeeper" />
         
               {/* players list */}
               {/* iterates over array
