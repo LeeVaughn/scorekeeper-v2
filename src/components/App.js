@@ -5,7 +5,7 @@ import { Consumer } from "./Context";
 import Header from "./Header";
 import Player from "./Player";
 import AddPlayerForm from "./AddPlayerForm"
-import Ticker from "./Ticker"
+// import Ticker from "./Ticker"
 
 class App extends Component {
   render() {
